@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  font-family: "Poppins", sans-serif;
+  background: #f4f7f6;
+  color: #333;
+}
+
+body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  min-width: 300px;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+  color: #4caf50;
+  font-size: 2em;
+  margin-bottom: 20px;
+  animation: slideInFromTop 1s ease-in-out;
+}
+
+/* Form Styling */
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+.form label {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.form input[type="number"] {
+  width: 200px;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+.form input[type="number"]:focus {
+  border-color: #4caf50;
+}
+
+.form .guessSubmit,
+.start-new-game {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #4caf50;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.form .guessSubmit:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.form .guessSubmit:active {
+  background-color: #388e3c;
+}
+
+/* Result Paragraphs Styling */
+.resultParas {
+  text-align: center;
+}
+
+.resultParas p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.resultParas p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.lastResult,
+.lowOrHi {
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.lowOrHi {
+  color: #000;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    margin-block: 20px;
+    margin-inline: auto;
+  }
+}
